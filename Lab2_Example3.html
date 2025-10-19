@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Sheet</title>
+</head>
+<body>
+
+<h2 align="center">Student Registration</h2>
+  <form action="action-page.html" method="post" target="_blank" name="userRegistration">
+	<p>
+         First name: <input type = "text" name = "first_name" maxlength="5" Size="10"/>
+         Last name: <input type = "text" name = "last_name" />
+	</p>
+	<p>
+		 User ID : <input type = "text" name = "user_id" />
+         Password: <input type = "password" name = "password" />
+	</p>
+	<p>
+		 Description : </p>
+		 <p>
+         <textarea rows = "5" cols = "50" name = "description">
+            Enter description here..
+         </textarea>
+	</p>
+	<p>
+		<input type = "checkbox" name = "maths" value = "Maths"> Maths
+        <input type = "checkbox" name = "physics" value = "Physics"> Physics
+	</p>
+	<p>
+		<input type = "radio" name = "gender" value = "Male"> Male
+        <input type = "radio" name = "gender" value = "Female"> Female
+		<input type = "radio" name = "gender" value = "Other"> OTHER
+	</p>
+	<p> City
+		 <select name = "dropdown" required>
+			<option value = "" selected >Select any city</option>
+            <option value = "Karachi" >Karachi</option>
+            <option value = "Lahore">Lahore</option>
+		<option value= "Haiderabad">Haiderabad</option>
+         </select>
+	</p>
+	<p>
+		 <input type = "file" name = "fileupload" accept = "image/*" />
+	</p>
+	<p>
+		 <input type = "submit" name = "submit" value = "Submit" />
+         <input type = "reset" name = "reset"  value = "Reset" />
+	</p>
+	<p>
+         <input type = "image" name = "image_button" src = "submit.gif" alt="submit button"/>
+	</p>
+	<p>
+		<fieldset>
+			<legend>Subscribe to the Newsletter</legend>
+			<input type="email" name="email">
+			<input type = "button" name = "ok" value = "OK" />
+		</fieldset>
+		
+		<label for="Fname">Enter First name</label> 
+		<input type="text" id="Fname" name="tFname">
+
+		<label for="nic">National Identity Card (NIC) Number:</label>
+		<input type="text" id="nic" name="nic" placeholder="12345-1234567-1" required />
+		<small>Format: 12345-1234567-1</small>
+
+<input type="button" value="Click Me" onclick="alert('Just a button')" disabled />
+	</p>
+ </form>
+</body>
+</html>
